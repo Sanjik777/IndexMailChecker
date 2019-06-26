@@ -1,0 +1,20 @@
+﻿<Window x:Class="IndexMailChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IndexMailChecker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+	<Grid>
+		<Button Click="SearchStreetButtonClick" Content="искать" HorizontalAlignment="Left" Margin="169,91,0,0" VerticalAlignment="Top" Width="75"/>
+		<TextBox Name="indexTextBox" HorizontalAlignment="Left" Height="23" Margin="24,91,0,0" TextWrapping="Wrap" Text="01000" VerticalAlignment="Top" Width="138"/>
+		<TextBlock x:Name="mailTextBlock" Margin="61,157,76,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="127">
+		</TextBlock>
+		<Border BorderThickness="1" BorderBrush="Black" Margin="59,157,66,36"/>
+		<Button Click="ConnectButtonClick" Content="Подключитья к серверу" HorizontalAlignment="Left" Margin="339,91,0,0" VerticalAlignment="Top" Width="147"/>
+		<TextBlock Text="Введите почтовый индекс для поиска улицы (от 01000 до 01002):" HorizontalAlignment="Left" Margin="24,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="38"/>
+		<TextBlock Text="Сервер=127.0.0.1, порт=12345" HorizontalAlignment="Left" Margin="343,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="143"/>
+
+	</Grid>
+</Window>
